@@ -22,10 +22,8 @@ export class SignaldemoComponent {
       console.log('Actions: ', this.actions());
     });
   }
-  // actions = signal<string[]>([]);
   increment() {
     this.counter.update((prev) => prev + 1);
-    // this.actions.push('INCREMENT');
     this.actions.update((prev) => [...prev, 'INCREMENT']);
   }
 
